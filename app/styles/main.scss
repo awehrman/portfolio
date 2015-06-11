@@ -3,7 +3,7 @@
 
 //variables
 $grey: #333;
-$highlight: #333; 
+$highlight: #50E3D8; 
 
 $desktop: 56.25em; /* 900px */
 $tablet: 43.75em; /* 700 */
@@ -45,10 +45,19 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   color: $grey;
 }
 
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .container {
   font-size: 1em;
   line-height: 1.25; /* 20px */
   padding: 1em;
+  margin: 0 auto;
+  max-width: 42em;
 }
 
 @media (min-width: $tablet) {
@@ -65,7 +74,6 @@ h1 {
   /* 2x body copy size = 32px */
   line-height: 1.25;
   /* 45px / 36px */
-  text-align: center;
 }
 
 @media (min-width: $tablet) {
@@ -131,19 +139,6 @@ h3 {
   }
 }
 
-h4 {
-  font-size: 1.125em;
-  /* 1.125x body copy size = 18px */
-  line-height: 1.11111111;
-}
-
-@media (min-width: $tablet) {
-  h4 {
-    line-height: 1.22222222;
-    /* (22px / 18px */
-  }
-}
-
 blockquote {
   font-size: 1.25em;
   /* 20px / 16px */
@@ -157,5 +152,40 @@ blockquote {
     /* 24px / 16px = */
     line-height: 1.45833333;
     /* 35px / 24px */
+  }
+}
+
+header {
+  text-align: center;
+
+  ul.nav-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: -webkit-fit-content;
+       width: -moz-fit-content;
+            width: fit-content;
+    
+    @extend .clearfix;
+    
+    > li {
+      float: left;
+      padding: 0 1.5em 2em;
+
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+    
+    a {
+      color: $highlight;
+      text-decoration: none;
+    }
+
+    i {
+      padding: 10px;
+    }
   }
 }
