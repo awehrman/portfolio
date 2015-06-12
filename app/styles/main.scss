@@ -1,7 +1,8 @@
 // bower:scss
 // endbower
 
-//variables
+//variables & basic layout
+//---------------------------------------------------------------------------------------
 $grey: #333;
 $highlight: #50E3D8; 
 
@@ -25,13 +26,18 @@ $tablet: 43.75em; /* 700 */
     clear: both;
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
 .clearfix {
     *zoom: 1;
+}
+
+.leftCol {
+  float: left;
+  width: 50%;
+}
+
+.rightCol {
+  float: right;
+  width: 50%;
 }
 
 body {
@@ -52,112 +58,35 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.container {
+//header
+//---------------------------------------------------------------------------------------
+
+header {
   font-size: 1em;
   line-height: 1.25; /* 20px */
-  padding: 1em;
-  margin: 0 auto;
+  margin: 2em auto 0;
   max-width: 42em;
-}
+  text-align: center;
 
-@media (min-width: $tablet) {
-  .container {
-    font-size: 1em;
-    line-height: 1.375; /* 22px */
-    padding: 1em;
-  }
-}
-
-h1 {
-  font-weight: 100;
-  font-size: 2em;
-  /* 2x body copy size = 32px */
-  line-height: 1.25;
-  /* 45px / 36px */
-}
-
-@media (min-width: $tablet) {
   h1 {
     font-weight: 100;
-    font-size: 2.5em;
-    /* 2.5x body copy size = 40px */
-    line-height: 1.125;
-  }
-}
-
-@media (min-width: $desktop) {
-  h1 {
-    font-size: 3em;
-    /* 3x body copy size = 48px */
-    line-height: 1.05;
-  }
-}
-
-h2 {
-  font-size: 1.625em;
-  /* 1.625x body copy size = 26px */
-  line-height: 1.15384615;
-  /* 30px / 26px */
-}
-
-@media (min-width: $tablet) {
-  h2 {
     font-size: 2em;
     /* 2x body copy size = 32px */
     line-height: 1.25;
+    /* 45px / 36px */
+    margin-bottom: 0.25em;
   }
-}
 
-@media (min-width: $desktop) {
-  h2 {
-    font-size: 2.25em;
-    /* 2.25x body copy size = 36px */
-    line-height: 1.25;
+  @media (min-width: $tablet) {
+    h1 {
+      font-weight: 100;
+      font-size: 2.5em;
+      /* 2.5x body copy size = 40px */
+      line-height: 1.125;
+    }
   }
-}
 
-h3 {
-  font-size: 1.375em;
-  /* 1.375x body copy size = 22px */
-  line-height: 1.13636364;
-  /* 25px / 22px */
-}
-
-@media (min-width: $tablet) {
-  h3 {
-    font-size: 1.5em;
-    /* 1.5x body copy size = 24px */
-    line-height: 1.25;
-  }
-}
-
-@media (min-width: $desktop) {
-  h3 {
-    font-size: 1.75em;
-    /* 1.75x body copy size = 28px */
-    line-height: 1.25;
-  }
-}
-
-blockquote {
-  font-size: 1.25em;
-  /* 20px / 16px */
-  line-height: 1.25;
-  /* 25px / 20px */
-}
-
-@media (min-width: $tablet) {
-  blockquote {
-    font-size: 1.5em;
-    /* 24px / 16px = */
-    line-height: 1.45833333;
-    /* 35px / 24px */
-  }
-}
-
-header {
-  text-align: center;
-
+  //navigation 
   ul.nav-list {
     list-style: none;
     margin: 0 auto;
@@ -188,4 +117,77 @@ header {
       padding: 10px;
     }
   }
+}
+
+@media (min-width: $tablet) {
+  header {
+    font-size: 1em;
+    line-height: 1.375; /* 22px */
+    margin-top: 4em;
+  }
+}
+
+//resume entry formatting
+//---------------------------------------------------------------------------------------
+
+article {
+  font-size: 1em;
+  line-height: 1.25; /* 20px */
+  padding: 2em 1em;
+  margin: 0 auto;
+  max-width: 42em;
+
+  h2 {
+      font-weight: 400;
+      font-size: 1.333em;
+      /* 2.5x body copy size = 40px */
+      line-height: 1.125;
+      margin: 0;
+  }
+
+  .company {
+  }
+
+  .dateRange {
+    color: $highlight;
+    font-weight: 400;
+    margin-top: 1.125em;
+  }
+
+  @media (min-width: $tablet) { 
+    .dateRange {
+      font-weight: 300;
+      margin-top: 0;
+    }
+
+    .columns {
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        -ms-columns: 2;
+        -o-columns: 2;
+        columns: 2;
+        -webkit-column-gap: 3.3898305%;
+        -moz-column-gap: 3.3898305%;
+        -ms-column-gap: 3.3898305%;
+        -o-column-gap: 3.3898305%;
+        column-gap: 3.3898305%;
+    }
+
+    .dateRange {
+      float: right;
+    }
+  }
+
+}
+
+@media (min-width: $tablet) {
+  article {
+    font-size: 1em;
+    line-height: 1.375; /* 22px */
+  }
+}
+
+aside {
+  background: rgb(80, 227, 216); /* Fall-back for browsers that don't support rgba */
+  background: rgba(80, 227, 216, .15);
 }
