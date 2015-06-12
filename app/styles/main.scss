@@ -161,16 +161,16 @@ article {
     }
 
     .columns {
-        -webkit-columns: 2;
+      -webkit-columns: 2;
         -moz-columns: 2;
-        -ms-columns: 2;
-        -o-columns: 2;
-        columns: 2;
-        -webkit-column-gap: 3.3898305%;
+          -ms-columns: 2;
+            -o-columns: 2;
+              columns: 2;
+      -webkit-column-gap: 3.3898305%;
         -moz-column-gap: 3.3898305%;
-        -ms-column-gap: 3.3898305%;
-        -o-column-gap: 3.3898305%;
-        column-gap: 3.3898305%;
+          -ms-column-gap: 3.3898305%;
+            -o-column-gap: 3.3898305%;
+              column-gap: 3.3898305%;
     }
 
     .dateRange {
@@ -190,4 +190,66 @@ article {
 aside {
   background: rgb(80, 227, 216); /* Fall-back for browsers that don't support rgba */
   background: rgba(80, 227, 216, .15);
+  padding: 2em;
+  font-size: 1.125em;
+
+  a {
+    color: rgba(80, 227, 216, 1);
+  }
+
+  .columns {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 40em;    
+  }
+
+   .multi-columns {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 40em;
+    -webkit-columns: 3;
+      -moz-columns: 3;
+        -ms-columns: 3;
+          -o-columns: 3;
+            columns: 3;
+    -webkit-column-gap: 3.3898305%;
+      -moz-column-gap: 3.3898305%;
+        -ms-column-gap: 3.3898305%;
+          -o-column-gap: 3.3898305%;
+            column-gap: 3.3898305%;
+  }
+}
+
+@media (min-width: $tablet) {
+  aside {
+
+    .columns {
+      -webkit-columns: 2;
+      -moz-columns: 2;
+        -ms-columns: 2;
+          -o-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 3.3898305%;
+      -moz-column-gap: 3.3898305%;
+        -ms-column-gap: 3.3898305%;
+          -o-column-gap: 3.3898305%;
+            column-gap: 3.3898305%;
+    }
+    
+    .multi-columns {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 40em;
+      -webkit-columns: 4;
+        -moz-columns: 4;
+          -ms-columns: 4;
+            -o-columns: 4;
+              columns: 4;
+      -webkit-column-gap: 3.3898305%;
+        -moz-column-gap: 3.3898305%;
+          -ms-column-gap: 3.3898305%;
+            -o-column-gap: 3.3898305%;
+              column-gap: 3.3898305%;
+    }
+  }
 }
