@@ -17,7 +17,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-
+    
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -25,6 +25,26 @@
   <body>
     <header>
       <h1>Alexandra Wehrman</h1>
+      <ul class="contact">
+        <li>
+          <a href="mailto:allie.wehrman@gmail.com">
+            <img src="/images/contact.png" alt="Contact">
+            <div class="link">Contact</div>
+          </a>
+        </li>
+        <li>
+          <a href="http://github.com/awehrman">
+            <img src="/images/github.png" alt="GitHub">
+            <div class="link">GitHub</div>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/awehrman">
+            <img src="/images/linkedin.png" alt="LinkedIn">
+            <div class="link">Connect</div>
+          </a>
+        </li>
+      </ul>
     </header>
 
     <article>
@@ -33,45 +53,36 @@
         <span class="dates">Feb 2017 &ndash; Present</span>
         <h2>FleishmanHillard</h2>
         <ul class="resume">
-          <li>Worked in the Creative Department to estimate, architect and deliver custom interactive web experiences and content management driven microsites.</li>
+          <li>Architected and developed an internal news site for AT&T that integrated with their existing global authentication system. The application featured custom analytics reporting, a site search implemented with Lucene, and content management abilities for admin users to create, preview and publish posts.</li>
 
-          <li>Led the transition to update legacy jQuery codebases into modern ES6 development practices and frameworks like React.js.</li>
+					<li>Crafted high-quality responsive websites, animated ads, and web applications for clients such as AT&T, Biogen, Emerson and Krispy Kreme.</li>
 
-          <li>Maintained and expanded existing .NET applications and integrations with third party authentication systems.</li>
+					<li>Created several interactive and auto-play versions of 2D and 3D timelines using React and CSS3 transforms.</li>
 
-          <li>Translated design compositions into responsive templates for static sites, Wordpress Sites, and Adobe CQ platforms.</li>
+					<li>Integrated custom front-end experiences into a variety of content management systems including WordPress and Adobe CQ.</li>
 
-          <li>Developed a web scrapper in node.js to collect SEO metadata from blog archives to be included in search functionality.</li>
+					<li>Developed an internal tool in Node.js to cleanup an archive of Spanish language static site pages to ensure consistent metadata coverage for accented characters.</li>
+
+					<li>Led the transition to update legacy jQuery codebases into modern ES6 development practices, frameworks, and build processes.</li>
+
         </ul>
-        <!--<div id="FH_pie"></div>-->
       </section>
+
       <aside>
-        <h1>Skills &amp; Stack Experience</h1>
-        <div class="skills">
-          <div class="col">
-            <ul>
-              <li>Javascript / ES6</li>
-              <li>React.js / Ember.js</li>
-              <li>Node.js / Express.js</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li>CSS / Sass</li>
-              <li>HTML / JSX / Handlebars</li>
-              <li>C# / .NET / Windows Mobile</li>
-              <li>SQL / MongoDB</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li>WordPress / DotNetNuke / Drupal</li>
-              <li>Sketch / Adobe Creative Cloud</li>
-              <li>Git / SVN / TFS</li>
-            </ul>
-          </div>
-        </div>
+        <h1>Parsing Recipe Content with Parsing Expression Grammars</h1>
+	      <div class="project"> 
+	        <a href="#" target="_blank" alt="Recipe Parser">
+	        	<img class="mobile" src="/images/parser_mobile.png" alt="Recipe Parser" />
+	          <img class="full" src="/images/parser_hor2.png" alt="Recipe Parser" />
+	          <div class="full">
+	          	Turns out you don't necessarily need NLP techniques to parse fairly clean recipe data. Using some basic matching rules with parsing expression grammars, you can achieve some pretty solid results and digest how it all works over the course of an afternoon.
+
+	          	<a class="more" href="https://github.com/awehrman/recipe-collection" title="Read more about this project">Read more about this project</a>
+	          </div>
+	        </a>
+	      </div>
       </aside>
+      
       <section>
         <h1>Full Stack Developer</h1>
         <span class="dates">Jan 2014 &ndash; Jan&nbsp;2017</span>
@@ -85,33 +96,34 @@
           <li>Mentored and trained junior developers, performed code reviews, software demos, end-user training, and helped to establish a formal QA process.</li>
         </ul>
       </section>
-      <!--<aside>
-        <h1>Recent Projects</h1>
-        <div class="project">
-          <h2>Sass Me Deadly</h2>
-          <a href="https://github.com/awehrman/sass-me-deadly" target="_blank" alt="Sass Me Deadly">
-            <img src="/images/pic.png" alt="Sass Me Deadly" />
-          </a>
+      <aside>
+        <h1>Skills &amp; Stack Experience</h1>
+        <div class="skills">
+          <div class="col">
+            <ul>
+              <li>Javascript / ES6</li>
+              <li>React / Ember</li>
+              <li>Node / Express</li>
+              <li>Evernote SDK / PEG.js</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>CSS / Sass</li>
+              <li>HTML / JSX / Handlebars / PUG</li>
+              <li>C# / .NET / Lucene / Windows Mobile</li>
+              <li>SQL / MongoDB</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>Adobe CQ / WordPress / DotNetNuke</li>
+              <li>Sketch / Adobe Creative Cloud</li>
+              <li>Git / SVN / TFS</li>
+            </ul>
+          </div>
         </div>
-        <div class="project">
-          <h2>Recipe Parser</h2>
-          <a href="#" target="_blank" alt="Recipe Parser">
-            <img src="/images/pic.png" alt="Recipe Parser" />
-          </a>
-        </div>
-        <div class="project">
-          <h2>Recipe Browser</h2>
-          <a href="#" target="_blank" alt="Recipe Browser">
-            <img src="/images/pic.png" alt="Recipe Browser" />
-          </a>
-        </div>
-        <div class="project">
-          <h2>Kelly Wedding</h2>
-          <a href="https://github.com/awehrman/kelly_wedding" target="_blank" alt="Kelly Wedding">
-            <img src="/images/pic.png" alt="Kelly Wedding" />
-          </a>
-        </div>
-      </aside>-->
+      </aside>
       <section>
         <h1>Project Manager</h1>
         <span class="dates">Dec 2012 &ndash; Jan&nbsp;2014</span>
@@ -158,12 +170,6 @@
               <span>STEM Program, Summer 2007</span>
               </div>
           </div>
-
-          <!--<p><a href="http://csunplugged.org/wp-content/uploads/2014/12/PhylogeneticsUnplugged.pdf" target="_blank" alt="Phylogenetics Unplugged">Phylogenetics Unplugged</a></p>
-          <p>"Segmenting Early Embryogenesis in <em>Caenorhabditis elegans</em>."</p>
-          <p>Wehrman, A., Warnhoff, K., Thatcher, S., and Walston, T. Segmenting early embryogenesis in Caenorhabditis elegans. Seminar presentation. Truman MathBio Research Presentations, Donald Danforth Plant Sciences Center.</p>
-          <p>"A Semi-Automated Procedure for Segmenting Early Embryogenesis in Caenorhabditis elegans." Poster Presentation by Alexandra Wehrman. Society for Mathematical Biology Conference: Toronto, Canada. (Aug 2008)</p>
-          <p>“Centrality Measures on Vascular Networks.” Poster Presentation by Alexandra Wehrman. The MAA–AMS Joint Mathematics Meetings: San Diego, CA. (Jan 2008)</p>-->
         </div>
       </aside>
       <section>
@@ -200,7 +206,7 @@
         </ul>
       </aside>
     </article>
-
+    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -216,9 +222,9 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-    <!-- build:js scripts/bundle.js -->
-    <script src="scripts/bundle.js"></script>
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
 </html>
